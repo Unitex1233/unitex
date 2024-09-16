@@ -1,0 +1,237 @@
+/* Primary color scheme */
+:root {
+    --primary-color: #FFA73B;
+    --secondary-color: #121212;
+    --text-light: #f8f9fa;
+}
+
+/* Hero section background */
+.hero-section {
+    background: url('https://firebasestorage.googleapis.com/v0/b/unitex-31a48.appspot.com/o/Untitled%20design.png?alt=media&token=bf963591-5ed7-417d-a6cf-4d2fae1e7341') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire section */
+    position: relative;
+    color: var(--text-light);
+    height: 120vh; /* Doubled height for larger screens */
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media queries for responsive hero section */
+@media (max-width: 1200px) {
+    .hero-section {
+        height: 100vh; /* Doubled height for large tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        height: 80vh; /* Doubled height for medium tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh; /* Doubled height for small tablets and large phones */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 60vh; /* Doubled height for small phones */
+    }
+}
+
+/* Carousel image styling */
+.carousel-inner img {
+    width: 100%; /* Ensure images cover the width of the container */
+    max-height: 800px; /* Doubled height for larger screens */
+    object-fit: cover; /* Ensure images cover the carousel container properly */
+}
+
+/* Media queries for carousel responsiveness */
+@media (max-width: 1200px) {
+    .carousel-inner img {
+        max-height: 700px; /* Doubled height for large tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-inner img {
+        max-height: 600px; /* Doubled height for medium tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        max-height: 500px; /* Doubled height for small tablets and large phones */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner img {
+        max-height: 400px; /* Doubled height for small phones */
+    }
+}
+
+/* Navbar background color */
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+/* Carousel image blur effect */
+.carousel-blur {
+    filter: blur(3px);
+    transition: filter 0.5s ease-in-out;
+}
+
+.carousel-item.active .carousel-blur {
+    filter: blur(0px);
+}
+
+/* Feature card styling */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+/* Card Title Styling */
+.card-title {
+    color: var(--primary-color); /* Different color for the title */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Card Text Styling */
+.card-text {
+    color: black; /* Different color for the body text */
+    font-size: 1rem;
+}
+
+/* Features Section */
+#features {
+    background-color: #f8f9fa; /* Light background color */
+    color: var(--secondary-color);
+    padding: 80px 20px; /* Increased padding for top and bottom */
+    text-align: center;
+}
+
+/* Responsive adjustments for Features Section */
+@media (max-width: 1200px) {
+    #features {
+        padding: 70px 15px; /* Adjusted padding for large tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    #features {
+        padding: 60px 10px; /* Adjusted padding for medium tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    #features {
+        padding: 50px 5px; /* Adjusted padding for small tablets and large phones */
+    }
+}
+
+@media (max-width: 576px) {
+    #features {
+        padding: 40px 5px; /* Adjusted padding for small phones */
+    }
+}
+
+/* About Section */
+#about {
+    background-color: #f8f9fa; /* Light background color */
+    color: var(--secondary-color);
+    padding: 80px 20px; /* Increased padding for top and bottom */
+    text-align: center;
+    min-height: 80vh; /* Increased minimum height to occupy more space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* About Section Text */
+#about h2 {
+    font-size: 2.5rem; /* Increased font size for heading */
+}
+
+#about p {
+    font-size: 1.2rem; /* Increased font size for paragraph text */
+}
+
+/* Responsive adjustments for About Section */
+@media (max-width: 1200px) {
+    #about {
+        padding: 70px 15px; /* Adjusted padding for large tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    #about {
+        padding: 60px 10px; /* Adjusted padding for medium tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 50px 5px; /* Adjusted padding for small tablets and large phones */
+    }
+}
+
+@media (max-width: 576px) {
+    #about {
+        padding: 40px 5px; /* Adjusted padding for small phones */
+    }
+}
+
+/* Contact section */
+#contact {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 40px 0;
+    text-align: center;
+}
+
+#contact a {
+    color: var(--text-light);
+}
+
+/* General Body Styling */
+body {
+    background-color: var(--text-light);
+    color: var(--secondary-color);
+}
+
+.dark-mode {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+/* Spinner color */
+.spinner-border {
+    color: var(--primary-color);
+}
